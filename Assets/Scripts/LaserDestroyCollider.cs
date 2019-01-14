@@ -13,6 +13,6 @@ public class LaserDestroyCollider : MonoBehaviour
 	private IEnumerator DestroyColliderRoutine()
 	{
 		yield return new WaitForSeconds(seconds);
-		Destroy(GetComponent<BoxCollider2D>());
+		Destroy(GetComponent<PolygonCollider2D>());
 	}
 }
