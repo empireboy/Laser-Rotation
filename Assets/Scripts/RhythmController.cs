@@ -10,12 +10,17 @@ public class RhythmController : MonoBehaviour
 	public float delay = 0;
 
 	private float _secondsPerBeat;
-
-	public int circleCounter = 10;
-	private int _currentCircleCounter;
+	private int _currentBeat = 0;
+	private int _circleCounter = 0;
 
 	[SerializeField]
 	private List<Transform> _circles;
+
+	[SerializeField]
+	private List<int> _laserArray;
+
+	[SerializeField]
+	private List<CircleStruct> _circleArray;
 
 	private void Awake()
 	{
@@ -29,12 +34,7 @@ public class RhythmController : MonoBehaviour
 
 	private void NextBeat()
 	{
-		_currentCircleCounter--;
-
-		if (_currentCircleCounter == circleCounter-1)
-			return;
-
-		if (_currentCircleCounter <= 0)
+		/*if (_currentCircleCounter <= 0)
 		{
 			for (int i = 0; i < 4; i++)
 			{
@@ -55,6 +55,27 @@ public class RhythmController : MonoBehaviour
 		else if (_currentCircleCounter >= 2)
 		{
 			GetComponent<SpawnAroundObject>().Spawn(Random.Range(0, 360), 5);
+		}*/
+
+		if (_laserArray[_currentBeat] != -1 && _laserArray[_currentBeat] != 999)
+		{
+			GetComponent<SpawnAroundObject>().Spawn(_laserArray[_currentBeat], 5);
 		}
+
+		if (_laserArray[_currentBeat] == 999)
+		{
+			for (int i = 0; i < 4; i++)
+			{
+				_circles[i].gameObject.SetActive(_circleArray[_circleCounter].circleActive[i]);
+			}
+		}
+
+		_currentBeat++;
+	}
+
+	[System.Serializable]
+	public struct CircleStruct
+	{
+		public bool[] circleActive;
 	}
 }
