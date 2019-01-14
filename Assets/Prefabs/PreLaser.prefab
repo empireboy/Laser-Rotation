@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4050784802358750620}
   - component: {fileID: 2865563877877858408}
-  - component: {fileID: 3173006546141727454}
+  - component: {fileID: 1801815122477436837}
+  - component: {fileID: 7821856457787759896}
+  - component: {fileID: 6110296348974039564}
   m_Layer: 0
-  m_Name: Laser
+  m_Name: PreLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4bfd6b2c7e659ed43a089028f429c0b8, type: 3}
-  m_Color: {r: 0.6509434, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -80,7 +82,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3173006546141727454
+--- !u!114 &1801815122477436837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899808292160954253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba4dfb1ce48c684e839602b905adadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 1899808292160954253, guid: aa4b62a0491e66b47a592f0ae128def4,
+    type: 3}
+--- !u!114 &7821856457787759896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899808292160954253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8adc713f69de449b282b52711cf1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6110296348974039564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,4 +120,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e249fa81e33a2a4a9b2eedda0ce299a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reduceValue: 0.02
+  reduceValue: 0.01
