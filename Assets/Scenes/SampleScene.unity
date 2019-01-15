@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 238316414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.5, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.2, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1837629123}
   m_RootOrder: 8
@@ -302,8 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448517b540061844997dd16085fb65b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &238316418
-CircleCollider2D:
+--- !u!61 &238316418
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -312,12 +312,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!212 &238316419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -355,8 +365,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e13be39ab83a69a4a95ef9c78f8c529b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4bfd6b2c7e659ed43a089028f429c0b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -434,7 +444,7 @@ MonoBehaviour:
   - {fileID: 2076782504}
   - {fileID: 601144456}
   - {fileID: 1849598679}
-  _laserArray: 2d000000ffffffffffffffffffffffff87000000ffffffffffffffffffffffffe1000000ffffffffffffffffffffffffffffffff00000000ffffffff00000000ffffffff0a000000ffffffff00000000ffffffff0a000000ffffffff1e000000ffffffffffffffffffffffffffffffffffffffff64000000ffffffff82000000ffffffffffffffffffffffffc8000000ffffffffd2000000ffffffffdc000000ffffffffe6000000eb000000f0000000ffffffff04010000ffffffff18010000ffffffffffffffffffffffff00000000ffffffffffffffffffffffffb4000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0e010000ffffffffffffffffffffffffe7030000ffffffffffffffffffffffff00000000ffffffffffffffffffffffff14000000ffffffffffffffffffffffff28000000ffffffff32000000ffffffff3c000000ffffffffffffffffffffffff64000000ffffffffffffffffffffffff96000000ffffffffaa000000ffffffffbe000000ffffffffd2000000ffffffffe6000000fffffffffa000000040100000e010000ffffffff2c010000ffffffff400100004a01000054010000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000e6000000
+  _laserArray: 2d000000ffffffffffffffffffffffff87000000ffffffffffffffffffffffffe1000000ffffffffffffffffffffffffffffffff00000000ffffffff00000000ffffffff0a000000ffffffff00000000ffffffff0a000000ffffffff1e000000ffffffffffffffffffffffffffffffffffffffff64000000ffffffff82000000ffffffffffffffffffffffffc8000000ffffffffd2000000ffffffffdc000000ffffffffe6000000eb000000f0000000ffffffff04010000ffffffff18010000ffffffffffffffffffffffff00000000ffffffffffffffffffffffffb4000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0e010000ffffffffffffffffffffffffe7030000ffffffffffffffffffffffff00000000ffffffffffffffffffffffff14000000ffffffffffffffffffffffff28000000ffffffff32000000ffffffff3c000000ffffffffffffffffffffffff64000000ffffffffffffffffffffffff96000000ffffffffaa000000ffffffffbe000000ffffffffd2000000ffffffffe6000000fffffffffa000000040100000e010000ffffffff2c010000ffffffff400100004a01000054010000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff46000000ffffffffffffffffffffffff6e000000ffffffffffffffffffffffff22010000fffffffffffffffffffffffffa000000ffffffffffffffffffffffff00000000ffffffffffffffffffffffffb4000000ffffffffffffffffffffffff5a000000ffffffffffffffffffffffff0e010000ffffffffffffffffffffffff00000000ffffffffffffffffffffffff2d000000ffffffffffffffffffffffff82000000ffffffffffffffffffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   _circleArray:
   - circleActive: 01000001
   - circleActive: 
@@ -663,7 +673,7 @@ Transform:
   m_GameObject: {fileID: 601144455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 3, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1837629123}
   m_RootOrder: 6
@@ -692,8 +702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448517b540061844997dd16085fb65b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &601144459
-CircleCollider2D:
+--- !u!61 &601144459
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -702,12 +712,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!212 &601144460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -745,8 +765,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e13be39ab83a69a4a95ef9c78f8c529b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4bfd6b2c7e659ed43a089028f429c0b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1203,7 +1223,7 @@ Transform:
   m_GameObject: {fileID: 1849598678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.2, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1837629123}
   m_RootOrder: 5
@@ -1232,8 +1252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448517b540061844997dd16085fb65b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &1849598682
-CircleCollider2D:
+--- !u!61 &1849598682
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1242,12 +1262,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!212 &1849598683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1285,8 +1315,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e13be39ab83a69a4a95ef9c78f8c529b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4bfd6b2c7e659ed43a089028f429c0b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1457,7 +1487,7 @@ Transform:
   m_GameObject: {fileID: 2076782503}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.5, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 3, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1837629123}
   m_RootOrder: 7
@@ -1486,8 +1516,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448517b540061844997dd16085fb65b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &2076782507
-CircleCollider2D:
+--- !u!61 &2076782507
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1496,12 +1526,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!212 &2076782508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1539,8 +1579,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e13be39ab83a69a4a95ef9c78f8c529b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4bfd6b2c7e659ed43a089028f429c0b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
