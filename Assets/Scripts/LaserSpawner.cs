@@ -8,12 +8,12 @@ public class LaserSpawner : MonoBehaviour
 	private void Awake()
 	{
 		GetComponent<SpawnAtCurrentTransform>().Spawn(spawnTime);
-		GetComponent<SpawnAtCurrentTransform>().spawnEvent += OnSpawn;
+		GetComponent<SpawnAtCurrentTransform>().SpawnEvent += OnSpawn;
 	}
 
-	private void OnSpawn()
+	private void OnSpawn(Transform spawningObject)
 	{
-		GetComponent<SpawnAtCurrentTransform>().spawnEvent -= OnSpawn;
+		GetComponent<SpawnAtCurrentTransform>().SpawnEvent -= OnSpawn;
 		Destroy(gameObject);
 	}
 }

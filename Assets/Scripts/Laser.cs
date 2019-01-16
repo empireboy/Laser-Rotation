@@ -10,9 +10,12 @@ public struct Laser
 [System.Serializable]
 public struct LaserPart
 {
-	public Vector2 force;
+	public enum ForceDirections { forward, backward, left, right }
+	public ForceDirections forceDirection;
 	public Color startColor;
 	public Color finalColor;
 	public float gravity;
-	public float lifetime;
+	public float radius;
+	public float forceFactor;
+	public int angle;
 }

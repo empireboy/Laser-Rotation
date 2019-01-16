@@ -6,5 +6,8 @@ public class Level : ScriptableObject
 {
 	public int bpm;
 	public AudioClip audio;
-	public List<Beat> lasers;
+	public float audioVolume = 1;
+	public float audioPitch = 1;
+	public float cameraSize = 5;
+	public List<Beat> beats;
 }

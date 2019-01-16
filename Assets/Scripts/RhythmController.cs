@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
-using CM.Spawner;
 using System.Collections.Generic;
 
 public class RhythmController : MonoBehaviour
 {
-	public int bpm;
-
+	[SerializeField]
+	private Level _level;
+	public Level Level { get => _level; }
 	//public float secondsToReachTarget = 1f;
 	//public float slownessFactor = 1;
+
+	public delegate void BeatHandler(int beat);
+	public event BeatHandler BeatEvent;
 
 	private int _currentBeat = 0;
 	public int CurrentBeat { get => _currentBeat; }
@@ -28,12 +31,13 @@ public class RhythmController : MonoBehaviour
 
 	private void Awake()
 	{
-		_secondsPerBeat = 60f / bpm;
+		_secondsPerBeat = 60f / _level.bpm;
+		Camera.main.orthographicSize = _level.cameraSize;
 	}
 
 	private void Start()
 	{
-		InvokeRepeating("NextBeat", 0, SecondsPerBeat * 0.25f);
+		InvokeRepeating("NextBeat", 0, _secondsPerBeat * 0.25f);
 	}
 
 	private void NextBeat()
@@ -50,6 +54,8 @@ public class RhythmController : MonoBehaviour
 				_circles[i].gameObject.SetActive(_circleArray[_circleCounter].circleActive[i]);
 			}
 		}*/
+
+		BeatEvent?.Invoke(_currentBeat);
 
 		_currentBeat++;
 	}

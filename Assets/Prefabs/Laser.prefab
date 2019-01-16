@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 4050784802358750620}
   - component: {fileID: 2865563877877858408}
   - component: {fileID: 8024643622692535338}
+  - component: {fileID: 4881414121109074284}
   - component: {fileID: 2437602292297008625}
   - component: {fileID: 3173006546141727454}
   - component: {fileID: 1309330270106703152}
   - component: {fileID: 6496171952774861964}
+  - component: {fileID: 8313612642597111570}
   - component: {fileID: 7628860854543630602}
   m_Layer: 0
   m_Name: Laser
@@ -106,6 +108,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!247 &4881414121109074284
+ConstantForce2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899808292160954253}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 0
 --- !u!60 &2437602292297008625
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -146,7 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e249fa81e33a2a4a9b2eedda0ce299a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reduceValue: 0.02
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  time: 1
 --- !u!114 &1309330270106703152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +186,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0.05
+--- !u!114 &8313612642597111570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899808292160954253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc67161cf1beca4a876ce3d72e8b92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!82 &7628860854543630602
 AudioSource:
   m_ObjectHideFlags: 0
