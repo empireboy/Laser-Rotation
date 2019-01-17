@@ -12,6 +12,9 @@ public class BeatController : MonoBehaviour
 	[SerializeField]
 	private GameObject _beat;
 
+	[SerializeField]
+	private Transform[] _walls;
+
 	private RhythmController _rhythmController;
 	private AudioSource _audioSource;
 
@@ -36,6 +39,13 @@ public class BeatController : MonoBehaviour
 			if (_rhythmController.Level.beats[beatIndex].spawnLaser)
 			{
 				InstantiateBeat(beatIndex);
+			}
+			if (_rhythmController.Level.beats[beatIndex].changeWalls)
+			{
+				_walls[0].gameObject.SetActive(_rhythmController.Level.beats[beatIndex].wall.front);
+				_walls[1].gameObject.SetActive(_rhythmController.Level.beats[beatIndex].wall.back);
+				_walls[2].gameObject.SetActive(_rhythmController.Level.beats[beatIndex].wall.left);
+				_walls[3].gameObject.SetActive(_rhythmController.Level.beats[beatIndex].wall.right);
 			}
 		}
 	}

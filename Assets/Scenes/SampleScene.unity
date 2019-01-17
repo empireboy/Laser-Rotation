@@ -460,6 +460,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _beatsBeforeSongStarts: 8
   _beat: {fileID: 1899808292160954253, guid: e885c688783755c42a3761610efe9f00, type: 3}
+  _walls:
+  - {fileID: 238316415}
+  - {fileID: 1849598679}
+  - {fileID: 601144456}
+  - {fileID: 2076782504}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
