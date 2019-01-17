@@ -15810,6 +15810,2406 @@ MonoBehaviour:
       back: 0
       left: 0
       right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 20
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 20
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 40
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 40
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 60
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 60
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 80
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 80
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 100
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 100
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 280
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 280
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 300
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 300
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 320
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 320
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 340
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 340
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 20
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 20
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 40
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 40
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 1
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 1, g: 0.79704005, b: 0.4669811, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 5
+        forceFactor: 0
+        angle: 60
+      hitLaser:
+        forceDirection: 1
+        startColor: {r: 1, g: 0, b: 0, a: 1}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 2
+        angle: 60
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
+  - spawnLaser: 0
+    laser:
+      preLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+      hitLaser:
+        forceDirection: 0
+        startColor: {r: 0, g: 0, b: 0, a: 0}
+        finalColor: {r: 0, g: 0, b: 0, a: 0}
+        gravity: 0
+        radius: 0
+        forceFactor: 0
+        angle: 0
+    changeWalls: 0
+    wall:
+      front: 0
+      back: 0
+      left: 0
+      right: 0
   - spawnLaser: 0
     laser:
       preLaser:
