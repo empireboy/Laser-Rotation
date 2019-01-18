@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using CM.Music;
 
 public class LaserInitializer : MonoBehaviour
 {
