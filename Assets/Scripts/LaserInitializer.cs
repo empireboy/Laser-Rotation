@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using CM.Music;
-
+/*
 public class LaserInitializer : MonoBehaviour
 {
 	[HideInInspector]
@@ -49,3 +49,4 @@ public class LaserInitializer : MonoBehaviour
 		GetComponent<ConstantForce2D>().force = force * _rhythmController.Level.beats[index].laser.hitLaser.forceFactor;
 	}
 }
+*/

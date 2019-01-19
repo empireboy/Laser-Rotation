@@ -387,7 +387,6 @@ GameObject:
   - component: {fileID: 315889146}
   - component: {fileID: 315889147}
   - component: {fileID: 315889148}
-  - component: {fileID: 315889149}
   m_Layer: 0
   m_Name: RhythmController
   m_TagString: Untagged
@@ -418,7 +417,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 315889145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ba8310fba816a49b9d213b7e8d3a74, type: 3}
+  m_Script: {fileID: 11500000, guid: 37cbfdcbf08414047b3f8268c36dd9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &315889148
@@ -430,41 +429,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 315889145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37cbfdcbf08414047b3f8268c36dd9bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe54c3f7b4ff02478db4f3c01e542b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: {fileID: 11400000, guid: 6d01bfe754a8bca47861c8aa691918ca, type: 2}
-  _circles:
-  - {fileID: 238316415}
-  - {fileID: 2076782504}
-  - {fileID: 601144456}
-  - {fileID: 1849598679}
-  _laserArray: 2d000000ffffffffffffffffffffffff87000000ffffffffffffffffffffffffe1000000ffffffffffffffffffffffffffffffff00000000ffffffff00000000ffffffff0a000000ffffffff00000000ffffffff0a000000ffffffff1e000000ffffffffffffffffffffffffffffffffffffffff64000000ffffffff82000000ffffffffffffffffffffffffc8000000ffffffffd2000000ffffffffdc000000ffffffffe6000000eb000000f0000000ffffffff04010000ffffffff18010000ffffffffffffffffffffffff00000000ffffffffffffffffffffffffb4000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0e010000ffffffffffffffffffffffffe7030000ffffffffffffffffffffffff00000000ffffffffffffffffffffffff14000000ffffffffffffffffffffffff28000000ffffffff32000000ffffffff3c000000ffffffffffffffffffffffff64000000ffffffffffffffffffffffff96000000ffffffffaa000000ffffffffbe000000ffffffffd2000000ffffffffe6000000fffffffffa000000040100000e010000ffffffff2c010000ffffffff400100004a01000054010000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff46000000ffffffffffffffffffffffff6e000000ffffffffffffffffffffffff22010000fffffffffffffffffffffffffa000000ffffffffffffffffffffffff00000000ffffffffffffffffffffffffb4000000ffffffffffffffffffffffff5a000000ffffffffffffffffffffffff0e010000ffffffffffffffffffffffff00000000ffffffffffffffffffffffff2d000000ffffffffffffffffffffffff82000000ffffffffffffffffffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffff00000000ffffffffb4000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-  _circleArray:
-  - circleActive: 01000001
-  - circleActive: 
-  - circleActive: 
-  - circleActive: 
-  - circleActive: 
---- !u!114 &315889149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315889145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281d5353bb361f54abd0bc765bf42b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _beatsBeforeSongStarts: 8
-  _beat: {fileID: 1899808292160954253, guid: e885c688783755c42a3761610efe9f00, type: 3}
-  _walls:
-  - {fileID: 238316415}
-  - {fileID: 1849598679}
-  - {fileID: 601144456}
-  - {fileID: 2076782504}
+  musicLevel: {fileID: 11400000, guid: bfd5d3aca328b914fb5c3c33c9839e89, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

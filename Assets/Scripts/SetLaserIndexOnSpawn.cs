@@ -1,6 +1,6 @@
 ﻿using CM.Spawner;
 using UnityEngine;
-
+/*
 public class SetLaserIndexOnSpawn : MonoBehaviour
 {
 	private void Start()
@@ -14,3 +14,4 @@ public class SetLaserIndexOnSpawn : MonoBehaviour
 		spawningObject.GetComponent<LaserInitializer>().InitializeHitLaser();
 	}
 }
+*/

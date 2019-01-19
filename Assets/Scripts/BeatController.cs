@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using CM.Music;
+/*
 [RequireComponent(typeof(RhythmController))]
 public class BeatController : MonoBehaviour
 {
@@ -72,3 +73,4 @@ public class BeatController : MonoBehaviour
 		}
 	}
 }
+*/
