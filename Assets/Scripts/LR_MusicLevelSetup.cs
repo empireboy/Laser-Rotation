@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public class LaserRotationMusicLevelSetup : MonoBehaviour
+public class LR_MusicLevelSetup : MonoBehaviour
 {
-	public LaserRotationMusicLevel musicLevel;
+	public LR_MusicLevel musicLevel;
 
 	private void Awake()
 	{

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "LaserRotation/New Music Level", fileName = "NewMusicLevel.asset")]
-public class LaserRotationMusicLevel : ScriptableObject, IMusicLevel
+public class LR_MusicLevel : ScriptableObject, IMusicLevel
 {
 	public int bpm;
 	public AudioClip audio;

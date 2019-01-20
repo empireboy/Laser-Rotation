@@ -1,6 +1,6 @@
 ﻿using CM.Spawner;
 using UnityEngine;
-/*
+
 public class SetLaserIndexOnSpawn : MonoBehaviour
 {
 	private void Start()
@@ -10,8 +10,6 @@ public class SetLaserIndexOnSpawn : MonoBehaviour
 
 	private void OnSpawn(Transform spawningObject)
 	{
-		spawningObject.GetComponent<LaserInitializer>().index = GetComponent<LaserInitializer>().index;
-		spawningObject.GetComponent<LaserInitializer>().InitializeHitLaser();
+		spawningObject.GetComponent<LaserInitializer>().InitializeLaserPart(GetComponent<LR_MusicLevelSetup>().musicLevel.beats[GetComponent<LaserInitializer>().index].laser.hitLaser);
 	}
 }
-*/

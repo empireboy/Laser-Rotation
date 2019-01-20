@@ -387,6 +387,9 @@ GameObject:
   - component: {fileID: 315889146}
   - component: {fileID: 315889147}
   - component: {fileID: 315889148}
+  - component: {fileID: 315889151}
+  - component: {fileID: 315889149}
+  - component: {fileID: 315889150}
   m_Layer: 0
   m_Name: RhythmController
   m_TagString: Untagged
@@ -433,6 +436,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicLevel: {fileID: 11400000, guid: bfd5d3aca328b914fb5c3c33c9839e89, type: 2}
+--- !u!114 &315889149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315889145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64244a29e84a054b9f0b90966f70dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _laser: {fileID: 1899808292160954253, guid: e885c688783755c42a3761610efe9f00, type: 3}
+--- !u!114 &315889150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315889145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ba8310fba816a49b9d213b7e8d3a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &315889151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315889145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15ece34be45e7d4fa15c62cea4379fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _beatsBeforeSongStarts: 8
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
