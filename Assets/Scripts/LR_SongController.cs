@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using CM.Music;
+using System.Collections;
 
 [RequireComponent(typeof(LR_MusicLevelSetup))]
 public class LR_SongController : RhythmControllerBeatHandler
@@ -10,25 +11,43 @@ public class LR_SongController : RhythmControllerBeatHandler
 	[SerializeField] private int _beatsBeforeSongStarts = 8;
 	public int BeatsBeforeSongStarts { get => _beatsBeforeSongStarts; }
 
+	protected override void OnStart()
+	{
+		LR_MusicLevelSetup laserRotationMusicLevelSetup = GetComponent<LR_MusicLevelSetup>();
+		_audio = gameObject.AddComponent<AudioSource>();
+		_audio.clip = laserRotationMusicLevelSetup.musicLevel.audio;
+		_audio.volume = laserRotationMusicLevelSetup.musicLevel.audioVolume;
+		_audio.pitch = laserRotationMusicLevelSetup.musicLevel.audioPitch;
+		_audio.playOnAwake = false;
+	}
+
 	protected override void OnBeat(int currentBeat)
 	{
 		if (currentBeat == _beatsBeforeSongStarts)
 		{
-			_audio = gameObject.AddComponent<AudioSource>();
 			if (_audio && !_audio.isPlaying)
 			{
-				LR_MusicLevelSetup laserRotationMusicLevelSetup = GetComponent<LR_MusicLevelSetup>();
-				_audio.clip = laserRotationMusicLevelSetup.musicLevel.audio;
-				_audio.volume = laserRotationMusicLevelSetup.musicLevel.audioVolume;
-				_audio.pitch = laserRotationMusicLevelSetup.musicLevel.audioPitch;
-				_audio.playOnAwake = false;
 				_audio.Play();
-				Release();
 			}
-			else
-			{
-				Release();
-			}
+			Release();
 		}
+	}
+
+	public void PlayAudioAt(float audioTime, float time)
+	{
+		_audio.time = audioTime;
+		_audio.Play();
+		StartCoroutine(PlayAudioAtRoutine(time));
+	}
+
+	public void StopAudio()
+	{
+		_audio.Stop();
+	}
+
+	private IEnumerator PlayAudioAtRoutine(float time)
+	{
+		yield return new WaitForSeconds(time);
+		StopAudio();
 	}
 }

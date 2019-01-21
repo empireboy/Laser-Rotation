@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [System.Serializable]
-public struct Beat
+public class Beat
 {
 	[Header("Laser")]
 	public bool spawnLaser;

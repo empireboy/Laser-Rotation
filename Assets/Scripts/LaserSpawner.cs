@@ -5,7 +5,7 @@ public class LaserSpawner : MonoBehaviour
 {
 	public int spawnTime = 1;
 
-	private void Awake()
+	public void SetNextSpawn()
 	{
 		GetComponent<SpawnAtCurrentTransform>().Spawn(spawnTime);
 		GetComponent<SpawnAtCurrentTransform>().SpawnEvent += OnSpawn;
