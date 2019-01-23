@@ -38,6 +38,7 @@ public class LaserUI : MonoBehaviour
 	private void Start()
 	{
 		typeText.text = laserType.ToString();
+		Preset();
 	}
 
 	public void Apply()
@@ -83,5 +84,46 @@ public class LaserUI : MonoBehaviour
 			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser = laserPart;
 
 		_musicLevelEditor.UpdateIndex();
+	}
+
+	public void Preset()
+	{
+		LaserPart laserPart = new LaserPart();
+
+		if (laserType == LaserTypes.PreLaser)
+			laserPart = _musicLevelSetup.musicLevel.beats[index].laser.preLaser;
+
+		if (laserType == LaserTypes.HitLaser)
+			laserPart = _musicLevelSetup.musicLevel.beats[index].laser.hitLaser;
+
+		angleInputField.text = laserPart.angle.ToString();
+		radiusInputField.text = laserPart.radius.ToString();
+
+		startColorRInputField.text = (laserPart.startColor.r * 255).ToString();
+		startColorGInputField.text = (laserPart.startColor.g * 255).ToString();
+		startColorBInputField.text = (laserPart.startColor.b * 255).ToString();
+		startColorAInputField.text = (laserPart.startColor.a).ToString();
+
+		finalColorRInputField.text = (laserPart.finalColor.r * 255).ToString();
+		finalColorGInputField.text = (laserPart.finalColor.g * 255).ToString();
+		finalColorBInputField.text = (laserPart.finalColor.b * 255).ToString();
+		finalColorAInputField.text = (laserPart.finalColor.a).ToString();
+
+		switch (laserPart.forceDirection)
+		{
+			case LaserPart.ForceDirections.forward:
+				forceDirectionDropdown.value = 0;
+				break;
+			case LaserPart.ForceDirections.backward:
+				forceDirectionDropdown.value = 1;
+				break;
+			case LaserPart.ForceDirections.left:
+				forceDirectionDropdown.value = 2;
+				break;
+			case LaserPart.ForceDirections.right:
+				forceDirectionDropdown.value = 3;
+				break;
+		}
+		forceFactorInputField.text = laserPart.forceFactor.ToString();
 	}
 }
