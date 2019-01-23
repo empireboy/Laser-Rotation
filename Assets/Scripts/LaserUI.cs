@@ -126,4 +126,13 @@ public class LaserUI : MonoBehaviour
 		}
 		forceFactorInputField.text = laserPart.forceFactor.ToString();
 	}
+
+	public void Remove()
+	{
+		_musicLevelSetup.musicLevel.beats[index] = new Beat();
+
+		FindObjectOfType<MusicLevelEditor>().UpdateIndex();
+
+		Destroy(gameObject);
+	}
 }
