@@ -78,10 +78,18 @@ public class LaserUI : MonoBehaviour
 		}
 
 		if (laserType == LaserTypes.PreLaser)
+		{
 			_musicLevelSetup.musicLevel.beats[index].laser.preLaser = laserPart;
+			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser.angle = laserPart.angle;
+			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser.radius = laserPart.radius;
+		}
 
 		if (laserType == LaserTypes.HitLaser)
+		{
 			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser = laserPart;
+			_musicLevelSetup.musicLevel.beats[index].laser.preLaser.angle = laserPart.angle;
+			_musicLevelSetup.musicLevel.beats[index].laser.preLaser.radius = laserPart.radius;
+		}
 
 		_musicLevelEditor.UpdateIndex();
 	}

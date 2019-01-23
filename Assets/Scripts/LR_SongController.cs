@@ -40,6 +40,12 @@ public class LR_SongController : RhythmControllerBeatHandler
 		StartCoroutine(PlayAudioAtRoutine(time));
 	}
 
+	public void PlayAudioAt(float audioTime)
+	{
+		_audio.time = audioTime;
+		_audio.Play();
+	}
+
 	public void StopAudio()
 	{
 		_audio.Stop();

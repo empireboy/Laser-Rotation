@@ -30,7 +30,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.C))
 		{
 			Beat beat = new Beat
 			{
@@ -42,38 +42,49 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 			beat.laser.hitLaser.startColor = Color.red;
 			CreateNewLaser(beat, _currentIndex);
 		}
+
+		if (Input.GetKeyDown(KeyCode.Space) && _currentIndex >= _songController.BeatsBeforeSongStarts)
+		{
+			if (!_musicLevelEditor.isPlaying)
+			{
+				DestroyLasersAndUI();
+
+				GetComponent<RhythmController>().StartLevelAt(_currentIndex);
+				_songController.PlayAudioAt(GetComponent<RhythmController>().SecondsPerBeat * 0.25f * (_currentIndex - _songController.BeatsBeforeSongStarts));
+
+				_musicLevelEditor.isPlaying = true;
+			}
+			else
+			{
+				_musicLevelEditor.UpdateIndex();
+				GetComponent<RhythmController>().StopLevel();
+				_songController.StopAudio();
+
+				_musicLevelEditor.isPlaying = false;
+			}
+		}
 	}
 
 	private void OnChangeIndex(int index)
 	{
 		_currentIndex = index;
 		Debug.Log(index);
-		int songIndex = index - GetComponent<LR_SongController>().BeatsBeforeSongStarts;
+		int songIndex = index - _songController.BeatsBeforeSongStarts;
 
 		if (index < 0) return;
 
-		GameObject[] lasers = GameObject.FindGameObjectsWithTag("Laser");
-		foreach (GameObject laser in lasers)
-		{
-			Destroy(laser);
-		}
-
-		GameObject[] lasersUI = GameObject.FindGameObjectsWithTag("LaserUI");
-		foreach (GameObject laserUI in lasersUI)
-		{
-			Destroy(laserUI);
-		}
+		DestroyLasersAndUI();
 
 		if (songIndex >= 0)
 		{
-			_songController.PlayAudioAt(GetComponent<RhythmController>().SecondsPerBeat / 2 * songIndex, 0.25f);
+			_songController.PlayAudioAt(GetComponent<RhythmController>().SecondsPerBeat * 0.25f * songIndex, GetComponent<RhythmController>().SecondsPerBeat);
 		}
 
-		if (index-8 >= 0)
+		if (index-18 >= 0)
 		{
-			if (_musicLevelSetup.musicLevel.beats[index-8].spawnLaser)
+			if (_musicLevelSetup.musicLevel.beats[index-18].spawnLaser)
 			{
-				_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.beats[index-8].laser.hitLaser, index-8, false);
+				_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.beats[index-18].laser.hitLaser, index-18, false);
 			}
 		}
 
@@ -85,11 +96,26 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 
 	private void CreateNewLaser(Beat beat, int index)
 	{
-		if (index - 8 >= 0)
+		if (index - 18 >= 0)
 		{
-			_musicLevelSetup.musicLevel.beats[index - 8] = beat;
-			_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.beats[index - 8].laser.hitLaser, index, false);
+			_musicLevelSetup.musicLevel.beats[index - 18] = beat;
+			_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.beats[index - 18].laser.hitLaser, index, false);
 			_musicLevelEditor.UpdateIndex();
+		}
+	}
+
+	private void DestroyLasersAndUI()
+	{
+		GameObject[] lasers = GameObject.FindGameObjectsWithTag("Laser");
+		foreach (GameObject laser in lasers)
+		{
+			Destroy(laser);
+		}
+
+		GameObject[] lasersUI = GameObject.FindGameObjectsWithTag("LaserUI");
+		foreach (GameObject laserUI in lasersUI)
+		{
+			Destroy(laserUI);
 		}
 	}
 }
