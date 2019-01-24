@@ -12,6 +12,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 	private LR_MusicLevelSetup _musicLevelSetup;
 	private LR_LaserController _laserController;
 	private LR_SongController _songController;
+	private RhythmController _rhythmController;
 
 	private int _currentIndex = 0;
 
@@ -21,6 +22,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 		_musicLevelSetup = GetComponent<LR_MusicLevelSetup>();
 		_laserController = GetComponent<LR_LaserController>();
 		_songController = GetComponent<LR_SongController>();
+		_rhythmController = FindObjectOfType<RhythmController>();
 	}
 
 	private void Start()
@@ -37,7 +39,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 				spawnLaser = true
 			};
 			beat.laser.preLaser.radius = 5;
-			beat.laser.preLaser.startColor = Color.blue;
+			beat.laser.preLaser.startColor = Color.green;
 			beat.laser.hitLaser.radius = 5;
 			beat.laser.hitLaser.startColor = Color.red;
 			CreateNewLaser(beat, _currentIndex);
@@ -77,7 +79,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 
 		if (songIndex >= 0)
 		{
-			_songController.PlayAudioAt(GetComponent<RhythmController>().SecondsPerBeat * 0.25f * songIndex, GetComponent<RhythmController>().SecondsPerBeat);
+			_songController.PlayAudioAt(_rhythmController.SecondsPerBeat * 0.25f * songIndex, _rhythmController.SecondsPerBeat);
 		}
 
 		if (index-18 >= 0)
