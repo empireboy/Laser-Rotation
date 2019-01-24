@@ -1,63 +1,44 @@
 ﻿using UnityEngine;
 using CM.Music;
-using System.Collections;
 
-[RequireComponent(typeof(LR_MusicLevelSetup))]
 public class LR_SongController : RhythmControllerBeatHandler
 {
-	private AudioSource _audio;
-	public AudioSource Audio { get => _audio; }
+	private AudioPlayer _audioPlayer;
+	public AudioPlayer AudioPlayer { get => _audioPlayer; }
 
 	[SerializeField] private int _beatsBeforeSongStarts = 8;
 	public int BeatsBeforeSongStarts { get => _beatsBeforeSongStarts; }
 
-	protected override void OnStart()
-	{
-		LR_MusicLevelSetup laserRotationMusicLevelSetup = GetComponent<LR_MusicLevelSetup>();
-		_audio = gameObject.AddComponent<AudioSource>();
-		_audio.clip = laserRotationMusicLevelSetup.musicLevel.audio;
-		_audio.volume = laserRotationMusicLevelSetup.musicLevel.audioVolume;
-		_audio.pitch = laserRotationMusicLevelSetup.musicLevel.audioPitch;
-		_audio.playOnAwake = false;
-	}
+	public bool autoPlay = true;
 
 	protected override void OnBeat(int currentBeat)
 	{
 		if (currentBeat == _beatsBeforeSongStarts)
 		{
-			if (_audio && !_audio.isPlaying)
+			if (_audioPlayer.audioSource && !_audioPlayer.IsPlaying && autoPlay)
 			{
-				_audio.Play();
+				_audioPlayer.Play();
 			}
 			Release();
 		}
 	}
 
-	public void PlayAudioAt(float audioTime, float time)
+	public void SetAudio(IMusicLevel audio)
 	{
-		StopAudio();
-		_audio.time = audioTime;
-		_audio.Play();
-		StartCoroutine(PlayAudioAtRoutine(time));
-	}
+		if (!_audioPlayer)
+			_audioPlayer = gameObject.AddComponent<AudioPlayer>();
 
-	public void PlayAudioAt(float audioTime)
-	{
-		StopAudio();
-		_audio.time = audioTime;
-		_audio.Play();
-		StopAllCoroutines();
-	}
+		if (!_audioPlayer.audioSource)
+			_audioPlayer.audioSource = gameObject.AddComponent<AudioSource>();
 
-	public void StopAudio()
-	{
-		_audio.Stop();
-		StopAllCoroutines();
-	}
+		AudioData audioData = new AudioData
+		{
+			clip = audio.GetAudioClip(),
+			volume = audio.GetAudioVolume(),
+			pitch = audio.GetAudioPitch(),
+			playOnAwake = false
+		};
 
-	private IEnumerator PlayAudioAtRoutine(float time)
-	{
-		yield return new WaitForSeconds(time);
-		StopAudio();
+		_audioPlayer.SetAudio(audioData);
 	}
 }

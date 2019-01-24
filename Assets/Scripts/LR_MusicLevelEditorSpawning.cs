@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using CM.Music;
 
 [RequireComponent(typeof(MusicLevelEditor))]
@@ -47,22 +45,22 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && _currentIndex >= _songController.BeatsBeforeSongStarts)
 		{
-			if (!_musicLevelEditor.isPlaying)
+			if (_musicLevelEditor.enabled)
 			{
 				DestroyLasersAndUI();
 
 				GetComponent<RhythmController>().StartLevelAt(_currentIndex);
-				_songController.PlayAudioAt(GetComponent<RhythmController>().SecondsPerBeat * 0.25f * (_currentIndex - _songController.BeatsBeforeSongStarts));
+				_songController.AudioPlayer.PlayAudioAt(GetComponent<RhythmController>().SecondsPerBeat * 0.25f * (_currentIndex - _songController.BeatsBeforeSongStarts));
 
-				_musicLevelEditor.isPlaying = true;
+				_musicLevelEditor.enabled = false;
 			}
 			else
 			{
 				_musicLevelEditor.UpdateIndex();
 				GetComponent<RhythmController>().StopLevel();
-				_songController.StopAudio();
+				_songController.AudioPlayer.Stop();
 
-				_musicLevelEditor.isPlaying = false;
+				_musicLevelEditor.enabled = true;
 			}
 		}
 	}
@@ -79,7 +77,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 
 		if (songIndex >= 0)
 		{
-			_songController.PlayAudioAt(_rhythmController.SecondsPerBeat * 0.25f * songIndex, _rhythmController.SecondsPerBeat);
+			_songController.AudioPlayer.PlayAudioAt(_rhythmController.SecondsPerBeat * 0.25f * songIndex, _rhythmController.SecondsPerBeat);
 		}
 
 		if (index-18 >= 0)
@@ -96,7 +94,7 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 		}
 	}
 
-	private void CreateNewLaser(Beat beat, int index)
+	public void CreateNewLaser(Beat beat, int index)
 	{
 		if (index - 18 >= 0)
 		{

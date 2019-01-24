@@ -16,6 +16,11 @@ public class LR_MusicLevel : ScriptableObject, IMusicLevel
 		return bpm;
 	}
 
+	public AudioClip GetAudioClip()
+	{
+		return audio;
+	}
+
 	public float GetAudioVolume()
 	{
 		return audioVolume;

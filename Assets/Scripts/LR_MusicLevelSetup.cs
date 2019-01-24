@@ -7,5 +7,6 @@ public class LR_MusicLevelSetup : MonoBehaviour
 	private void Awake()
 	{
 		GetComponent<CM.Music.RhythmController>().SetMusicLevel(musicLevel);
+		GetComponent<LR_SongController>().SetAudio(musicLevel);
 	}
 }

@@ -28,11 +28,13 @@ public class LaserUI : MonoBehaviour
 
 	private LR_MusicLevelSetup _musicLevelSetup;
 	private MusicLevelEditor _musicLevelEditor;
+	private LR_MusicLevelEditorSpawning _musicLevelEditorSpawning;
 
 	private void Awake()
 	{
 		_musicLevelSetup = FindObjectOfType<LR_MusicLevelSetup>();
 		_musicLevelEditor = FindObjectOfType<MusicLevelEditor>();
+		_musicLevelEditorSpawning = FindObjectOfType<LR_MusicLevelEditorSpawning>();
 	}
 
 	private void Start()
@@ -43,39 +45,7 @@ public class LaserUI : MonoBehaviour
 
 	public void Apply()
 	{
-		LaserPart laserPart = new LaserPart
-		{
-			angle = int.Parse(angleInputField.text),
-			radius = int.Parse(radiusInputField.text),
-			startColor = new Color(
-				float.Parse(startColorRInputField.text) / 255,
-				float.Parse(startColorGInputField.text) / 255,
-				float.Parse(startColorBInputField.text) / 255,
-				float.Parse(startColorAInputField.text)
-			),
-			finalColor = new Color(
-				float.Parse(finalColorRInputField.text) / 255,
-				float.Parse(finalColorGInputField.text) / 255,
-				float.Parse(finalColorBInputField.text) / 255,
-				float.Parse(finalColorAInputField.text)
-			),
-			forceFactor = int.Parse(forceFactorInputField.text)
-		};
-		switch (forceDirectionDropdown.value)
-		{
-			case 0:
-				laserPart.forceDirection = LaserPart.ForceDirections.forward;
-				break;
-			case 1:
-				laserPart.forceDirection = LaserPart.ForceDirections.backward;
-				break;
-			case 2:
-				laserPart.forceDirection = LaserPart.ForceDirections.left;
-				break;
-			case 3:
-				laserPart.forceDirection = LaserPart.ForceDirections.right;
-				break;
-		}
+		LaserPart laserPart = GetLaserPartFromUI();
 
 		if (laserType == LaserTypes.PreLaser)
 		{
@@ -133,6 +103,45 @@ public class LaserUI : MonoBehaviour
 				break;
 		}
 		forceFactorInputField.text = laserPart.forceFactor.ToString();
+	}
+
+	private LaserPart GetLaserPartFromUI()
+	{
+		LaserPart laserPart = new LaserPart
+		{
+			angle = int.Parse(angleInputField.text),
+			radius = int.Parse(radiusInputField.text),
+			startColor = new Color(
+				float.Parse(startColorRInputField.text) / 255,
+				float.Parse(startColorGInputField.text) / 255,
+				float.Parse(startColorBInputField.text) / 255,
+				float.Parse(startColorAInputField.text)
+			),
+			finalColor = new Color(
+				float.Parse(finalColorRInputField.text) / 255,
+				float.Parse(finalColorGInputField.text) / 255,
+				float.Parse(finalColorBInputField.text) / 255,
+				float.Parse(finalColorAInputField.text)
+			),
+			forceFactor = int.Parse(forceFactorInputField.text)
+		};
+		switch (forceDirectionDropdown.value)
+		{
+			case 0:
+				laserPart.forceDirection = LaserPart.ForceDirections.forward;
+				break;
+			case 1:
+				laserPart.forceDirection = LaserPart.ForceDirections.backward;
+				break;
+			case 2:
+				laserPart.forceDirection = LaserPart.ForceDirections.left;
+				break;
+			case 3:
+				laserPart.forceDirection = LaserPart.ForceDirections.right;
+				break;
+		}
+
+		return laserPart;
 	}
 
 	public void Remove()
