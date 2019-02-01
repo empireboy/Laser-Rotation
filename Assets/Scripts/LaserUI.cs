@@ -4,9 +4,8 @@ using CM.Music;
 
 public class LaserUI : MonoBehaviour
 {
-	[HideInInspector] public int index;
-
-	public LaserTypes laserType;
+	private int _beatIndex;
+	private LaserTypes _laserType;
 
 	public Text typeText;
 
@@ -39,40 +38,28 @@ public class LaserUI : MonoBehaviour
 
 	private void Start()
 	{
-		typeText.text = laserType.ToString();
-		Preset();
+		typeText.text = _laserType.ToString();
+		Preset(_beatIndex);
+	}
+
+	public void Initialize(int beatIndex, LaserTypes laserType)
+	{
+		_beatIndex = beatIndex;
+		_laserType = laserType;
 	}
 
 	public void Apply()
 	{
 		LaserPart laserPart = GetLaserPartFromUI();
 
-		if (laserType == LaserTypes.PreLaser)
-		{
-			_musicLevelSetup.musicLevel.beats[index].laser.preLaser = laserPart;
-			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser.angle = laserPart.angle;
-			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser.radius = laserPart.radius;
-		}
-
-		if (laserType == LaserTypes.HitLaser)
-		{
-			_musicLevelSetup.musicLevel.beats[index].laser.hitLaser = laserPart;
-			_musicLevelSetup.musicLevel.beats[index].laser.preLaser.angle = laserPart.angle;
-			_musicLevelSetup.musicLevel.beats[index].laser.preLaser.radius = laserPart.radius;
-		}
+		_musicLevelSetup.musicLevel.SetLaserPart(laserPart, _laserType, _beatIndex);
 
 		_musicLevelEditor.UpdateIndex();
 	}
 
-	public void Preset()
+	public void Preset(int beatIndex)
 	{
-		LaserPart laserPart = new LaserPart();
-
-		if (laserType == LaserTypes.PreLaser)
-			laserPart = _musicLevelSetup.musicLevel.beats[index].laser.preLaser;
-
-		if (laserType == LaserTypes.HitLaser)
-			laserPart = _musicLevelSetup.musicLevel.beats[index].laser.hitLaser;
+		LaserPart laserPart = _musicLevelSetup.musicLevel.GetLaserPart(_laserType, beatIndex);
 
 		angleInputField.text = laserPart.angle.ToString();
 		radiusInputField.text = laserPart.radius.ToString();
@@ -146,7 +133,7 @@ public class LaserUI : MonoBehaviour
 
 	public void Remove()
 	{
-		_musicLevelSetup.musicLevel.beats[index] = new Beat();
+		_musicLevelSetup.musicLevel.SetBeat(new Beat(), _beatIndex);
 
 		FindObjectOfType<MusicLevelEditor>().UpdateIndex();
 

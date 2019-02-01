@@ -9,5 +9,5 @@ public class Beat
 
 	[Header("Walls")]
 	public bool changeWalls;
-	public Walls wall;
+	public Walls walls;
 }

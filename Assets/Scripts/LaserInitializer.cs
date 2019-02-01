@@ -68,7 +68,6 @@ public class LaserInitializer : MonoBehaviour
 	public void CreateUI(int index, LaserTypes laserType)
 	{
 		LaserUI laserUI = Instantiate(ui, GameObject.FindGameObjectWithTag("LaserUIContainer").transform).GetComponent<LaserUI>();
-		laserUI.index = index;
-		laserUI.laserType = laserType;
+		laserUI.Initialize(index, laserType);
 	}
 }

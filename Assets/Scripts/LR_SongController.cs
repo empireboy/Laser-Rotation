@@ -15,7 +15,7 @@ public class LR_SongController : RhythmControllerBeatHandler
 	{
 		if (currentBeat == _beatsBeforeSongStarts)
 		{
-			if (_audioPlayer.audioSource && !_audioPlayer.IsPlaying && autoPlay)
+			if (_audioPlayer.AudioSource && !_audioPlayer.IsPlaying && autoPlay)
 			{
 				_audioPlayer.Play();
 			}
@@ -23,22 +23,16 @@ public class LR_SongController : RhythmControllerBeatHandler
 		}
 	}
 
-	public void SetAudio(IMusicLevel audio)
+	public void SetAudio(IMusicLevel musicLevel)
 	{
 		if (!_audioPlayer)
 			_audioPlayer = gameObject.AddComponent<AudioPlayer>();
 
-		if (!_audioPlayer.audioSource)
-			_audioPlayer.audioSource = gameObject.AddComponent<AudioSource>();
+		_audioPlayer.SetAudio(musicLevel.AudioData);
+	}
 
-		AudioData audioData = new AudioData
-		{
-			clip = audio.GetAudioClip(),
-			volume = audio.GetAudioVolume(),
-			pitch = audio.GetAudioPitch(),
-			playOnAwake = false
-		};
-
-		_audioPlayer.SetAudio(audioData);
+	public float GetSongTime(float secondsPerBeat, int beatIndex)
+	{
+		return secondsPerBeat * 0.25f * (beatIndex - _beatsBeforeSongStarts);
 	}
 }

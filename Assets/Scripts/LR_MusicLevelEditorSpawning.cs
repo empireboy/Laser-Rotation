@@ -40,6 +40,8 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 			beat.laser.preLaser.startColor = Color.green;
 			beat.laser.hitLaser.radius = 5;
 			beat.laser.hitLaser.startColor = Color.red;
+			beat.laser.hitLaser.forceFactor = 2;
+			beat.laser.hitLaser.forceDirection = LaserPart.ForceDirections.backward;
 			CreateNewLaser(beat, _currentIndex);
 		}
 
@@ -68,29 +70,30 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 	private void OnChangeIndex(int index)
 	{
 		_currentIndex = index;
-		Debug.Log(index);
 		int songIndex = index - _songController.BeatsBeforeSongStarts;
 
 		if (index < 0) return;
+
+		_rhythmController.SetCurrentBeat(index);
 
 		DestroyLasersAndUI();
 
 		if (songIndex >= 0)
 		{
-			_songController.AudioPlayer.PlayAudioAt(_rhythmController.SecondsPerBeat * 0.25f * songIndex, _rhythmController.SecondsPerBeat);
+			_songController.AudioPlayer.PlayAudioAt(_songController.GetSongTime(_rhythmController.SecondsPerBeat, index), _rhythmController.SecondsPerBeat);
 		}
 
 		if (index-18 >= 0)
 		{
-			if (_musicLevelSetup.musicLevel.beats[index-18].spawnLaser)
+			if (_musicLevelSetup.musicLevel.GetBeat(index-18).spawnLaser)
 			{
-				_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.beats[index-18].laser.hitLaser, index-18, false);
+				_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.GetLaserPart(LaserTypes.HitLaser, index-18), index-18, false);
 			}
 		}
 
-		if (_musicLevelSetup.musicLevel.beats[index].spawnLaser)
+		if (_musicLevelSetup.musicLevel.GetBeat(index).spawnLaser)
 		{
-			_laserController.CreateLaser(_laserController.preLaser, _musicLevelSetup.musicLevel.beats[index].laser.preLaser, index, false);
+			_laserController.CreateLaser(_laserController.preLaser, _musicLevelSetup.musicLevel.GetLaserPart(LaserTypes.PreLaser, index), index, false);
 		}
 	}
 
@@ -98,8 +101,8 @@ public class LR_MusicLevelEditorSpawning : MonoBehaviour
 	{
 		if (index - 18 >= 0)
 		{
-			_musicLevelSetup.musicLevel.beats[index - 18] = beat;
-			_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.beats[index - 18].laser.hitLaser, index, false);
+			_musicLevelSetup.musicLevel.SetBeat(beat, index - 18);
+			_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.GetLaserPart(LaserTypes.HitLaser, index - 18), index, false);
 			_musicLevelEditor.UpdateIndex();
 		}
 	}
