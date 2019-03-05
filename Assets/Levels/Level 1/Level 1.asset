@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Level 1
   m_EditorClassIdentifier: 
   _bpm: 160
+  _beatsBeforeLevelStarts: 8
   _audioData:
     clip: {fileID: 8300000, guid: c7ce3272f64ebe7478a2bb024bc1ff60, type: 3}
     volume: 0.3
     pitch: 1
     playOnAwake: 0
   cameraSize: 5
-  beats: []
+  _beats: []

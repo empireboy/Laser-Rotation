@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using CM.Music;
 
-public class BeatDisplay : MonoBehaviour
+public class BeatDisplay : RhythmControllerBeatHandler
 {
 	[SerializeField]
 	private List<Transform> _beatTransforms;
@@ -11,24 +10,15 @@ public class BeatDisplay : MonoBehaviour
 	[SerializeField]
 	private GameObject _display;
 
-	private RhythmController _rhythmController;
-
-	private void Awake()
+	protected override void OnStart()
 	{
-		_rhythmController = FindObjectOfType<RhythmController>();
-	}
-
-	private void Start()
-	{
-		_rhythmController.BeatEvent += OnBeat;
-
 		_display = Instantiate(_display);
 		SetDisplay(0);
 	}
 
-	private void OnBeat(int beatIndex)
+	protected override void OnBeat(int beatIndex)
 	{
-		if (beatIndex - FindObjectOfType<LR_SongController>().BeatsBeforeSongStarts < 0)
+		if (beatIndex - rhythmController.Level.BeatsBeforeLevelStarts < 0)
 		{
 			SetDisplay(0);
 			return;
@@ -41,7 +31,7 @@ public class BeatDisplay : MonoBehaviour
 
 	private void SetDisplay(int beatIndex)
 	{
-		_display.transform.parent = _beatTransforms[beatIndex];
+		_display.transform.SetParent(_beatTransforms[beatIndex]);
 		_display.transform.localPosition = Vector3.zero;
 	}
 }

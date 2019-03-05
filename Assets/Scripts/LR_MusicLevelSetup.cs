@@ -1,18 +1,23 @@
 ﻿using UnityEngine;
 using CM.Music;
 
+[RequireComponent(typeof(RhythmController))]
 public class LR_MusicLevelSetup : MonoBehaviour
 {
 	public LR_MusicLevel musicLevel;
 
+	private RhythmController _rhythmController;
+
 	private void Awake()
 	{
-		GetComponent<RhythmController>().SetMusicLevel(musicLevel);
-		GetComponent<LR_SongController>().SetAudio(musicLevel);
+		_rhythmController = GetComponent<RhythmController>();
 	}
 
 	private void Start()
 	{
+		_rhythmController.SetMusicLevel(musicLevel);
+		GetComponent<SongController>().SetAudio(musicLevel);
+
 		if (musicLevel.GetBeatCount() <= 0)
 		{
 			ResetBeats();
@@ -23,10 +28,10 @@ public class LR_MusicLevelSetup : MonoBehaviour
 	{
 		musicLevel.ClearBeats();
 
-		int totalBeats = Mathf.FloorToInt(FindObjectOfType<RhythmController>().TotalBeats) + FindObjectOfType<LR_SongController>().BeatsBeforeSongStarts;
+		int totalBeats = Mathf.FloorToInt(_rhythmController.TotalBeats) + _rhythmController.Level.BeatsBeforeLevelStarts;
 		for (int i = 0; i < totalBeats; i++)
 		{
-			musicLevel.AddBeat(new Beat());
+			musicLevel.AddBeat(new LR_Beat());
 		}
 	}
 }

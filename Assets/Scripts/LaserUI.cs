@@ -21,6 +21,7 @@ public class LaserUI : MonoBehaviour
 
 	public Dropdown forceDirectionDropdown;
 	public InputField forceFactorInputField;
+	public InputField gravityInputField;
 
 	public InputField angleInputField;
 	public InputField radiusInputField;
@@ -52,14 +53,14 @@ public class LaserUI : MonoBehaviour
 	{
 		LaserPart laserPart = GetLaserPartFromUI();
 
-		_musicLevelSetup.musicLevel.SetLaserPart(laserPart, _laserType, _beatIndex);
+		_musicLevelSetup.musicLevel.GetBeat(_beatIndex).laser.SetLaserPart(laserPart, _laserType);
 
 		_musicLevelEditor.UpdateIndex();
 	}
 
 	public void Preset(int beatIndex)
 	{
-		LaserPart laserPart = _musicLevelSetup.musicLevel.GetLaserPart(_laserType, beatIndex);
+		LaserPart laserPart = _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(_laserType);
 
 		angleInputField.text = laserPart.angle.ToString();
 		radiusInputField.text = laserPart.radius.ToString();
@@ -90,6 +91,7 @@ public class LaserUI : MonoBehaviour
 				break;
 		}
 		forceFactorInputField.text = laserPart.forceFactor.ToString();
+		gravityInputField.text = laserPart.gravity.ToString();
 	}
 
 	private LaserPart GetLaserPartFromUI()
@@ -110,7 +112,8 @@ public class LaserUI : MonoBehaviour
 				float.Parse(finalColorBInputField.text) / 255,
 				float.Parse(finalColorAInputField.text)
 			),
-			forceFactor = int.Parse(forceFactorInputField.text)
+			forceFactor = int.Parse(forceFactorInputField.text),
+			gravity = int.Parse(gravityInputField.text)
 		};
 		switch (forceDirectionDropdown.value)
 		{
@@ -133,7 +136,7 @@ public class LaserUI : MonoBehaviour
 
 	public void Remove()
 	{
-		_musicLevelSetup.musicLevel.SetBeat(new Beat(), _beatIndex);
+		_musicLevelSetup.musicLevel.SetBeat(new LR_Beat(), _beatIndex);
 
 		FindObjectOfType<MusicLevelEditor>().UpdateIndex();
 

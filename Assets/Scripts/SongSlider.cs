@@ -3,19 +3,25 @@ using UnityEngine.UI;
 using CM.Music;
 
 [RequireComponent(typeof(Slider))]
-public class SongSlider : MonoBehaviour
+public class SongSlider : RhythmControllerBeatHandler
 {
 	private bool _checkForChangedValue = true;
 
-	private void Awake()
+	private Slider _slider;
+	private SongController _songController;
+	private MusicLevelEditor _musicLevelEditor;
+
+	protected override void OnAwake()
 	{
-		GetComponent<Slider>().onValueChanged.AddListener(OnValueChanged);
+		_songController = FindObjectOfType<SongController>();
+		_musicLevelEditor = FindObjectOfType<MusicLevelEditor>();
+		_slider = GetComponent<Slider>();
 	}
 
-	private void Start()
+	protected override void OnStart()
 	{
-		OnAudioInitialized(FindObjectOfType<LR_SongController>().AudioPlayer.AudioSource);
-		FindObjectOfType<RhythmController>().BeatEvent += OnBeat;
+		_slider.onValueChanged.AddListener(OnValueChanged);
+		OnAudioInitialized(_songController.AudioPlayer.AudioSource);
 	}
 
 	private void OnValueChanged(float value)
@@ -27,19 +33,17 @@ public class SongSlider : MonoBehaviour
 		}
 
 		int index = Mathf.RoundToInt(value);
-		FindObjectOfType<MusicLevelEditor>().UpdateIndex(index);
+		_musicLevelEditor.UpdateIndex(index);
 	}
 
 	private void OnAudioInitialized(AudioSource audioSource)
 	{
-		Slider slider = GetComponent<Slider>();
-		slider.maxValue = FindObjectOfType<RhythmController>().TotalBeats;
+		_slider.maxValue = rhythmController.TotalBeats;
 	}
 
-	private void OnBeat(int beatIndex)
+	protected override void OnBeat(int beatIndex)
 	{
-		Slider slider = GetComponent<Slider>();
-		slider.value = beatIndex;
+		_slider.value = beatIndex;
 		_checkForChangedValue = false;
 	}
 }
