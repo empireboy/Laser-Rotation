@@ -47,22 +47,22 @@ public class LaserInitializer : MonoBehaviour
 		_constantForce2d.enabled = true;
 	}
 
-	public void InitializeLaserPart(LaserPart laserPart)
+	public void InitializeLaserPartData(LaserPartData LaserPartData)
 	{
-		_rigidbody2d.gravityScale = laserPart.gravity;
-		_spriteRenderer.color = laserPart.startColor;
-		_colorChanger.newColor = laserPart.finalColor;
+		_rigidbody2d.gravityScale = LaserPartData.gravity;
+		_spriteRenderer.color = LaserPartData.startColor;
+		_colorChanger.newColor = LaserPartData.finalColor;
 
 		Vector2 force = Vector2.zero;
-		if (laserPart.forceDirection == LaserPart.ForceDirections.forward)
-			force = Quaternion.Euler(0, 0, laserPart.angle) * Vector2.left;
-		if (laserPart.forceDirection == LaserPart.ForceDirections.backward)
-			force = Quaternion.Euler(0, 0, laserPart.angle) * Vector2.right;
-		if (laserPart.forceDirection == LaserPart.ForceDirections.left)
-			force = Quaternion.Euler(0, 0, laserPart.angle) * Vector2.down;
-		if (laserPart.forceDirection == LaserPart.ForceDirections.right)
-			force = Quaternion.Euler(0, 0, laserPart.angle) * Vector2.up;
-		GetComponent<ConstantForce2D>().force = force * laserPart.forceFactor;
+		if (LaserPartData.forceDirection == LaserPartData.ForceDirections.forward)
+			force = Quaternion.Euler(0, 0, LaserPartData.angle) * Vector2.left;
+		if (LaserPartData.forceDirection == LaserPartData.ForceDirections.backward)
+			force = Quaternion.Euler(0, 0, LaserPartData.angle) * Vector2.right;
+		if (LaserPartData.forceDirection == LaserPartData.ForceDirections.left)
+			force = Quaternion.Euler(0, 0, LaserPartData.angle) * Vector2.down;
+		if (LaserPartData.forceDirection == LaserPartData.ForceDirections.right)
+			force = Quaternion.Euler(0, 0, LaserPartData.angle) * Vector2.up;
+		GetComponent<ConstantForce2D>().force = force * LaserPartData.forceFactor;
 	}
 
 	public void CreateUI(int index, LaserTypes laserType)

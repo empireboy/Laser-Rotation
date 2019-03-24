@@ -51,52 +51,52 @@ public class LaserUI : MonoBehaviour
 
 	public void Apply()
 	{
-		LaserPart laserPart = GetLaserPartFromUI();
+		LaserPartData laserPartData = GetLaserPartFromUI();
 
-		_musicLevelSetup.musicLevel.GetBeat(_beatIndex).laser.SetLaserPart(laserPart, _laserType);
+		_musicLevelSetup.musicLevel.GetBeat(_beatIndex).laser.item.SetLaserPart(laserPartData, _laserType);
 
 		_musicLevelEditor.UpdateIndex();
 	}
 
 	public void Preset(int beatIndex)
 	{
-		LaserPart laserPart = _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(_laserType);
+		LaserPartData laserPartData = _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.item.GetLaserPart(_laserType);
 
-		angleInputField.text = laserPart.angle.ToString();
-		radiusInputField.text = laserPart.radius.ToString();
+		angleInputField.text = laserPartData.angle.ToString();
+		radiusInputField.text = laserPartData.radius.ToString();
 
-		startColorRInputField.text = (laserPart.startColor.r * 255).ToString();
-		startColorGInputField.text = (laserPart.startColor.g * 255).ToString();
-		startColorBInputField.text = (laserPart.startColor.b * 255).ToString();
-		startColorAInputField.text = (laserPart.startColor.a).ToString();
+		startColorRInputField.text = (laserPartData.startColor.r * 255).ToString();
+		startColorGInputField.text = (laserPartData.startColor.g * 255).ToString();
+		startColorBInputField.text = (laserPartData.startColor.b * 255).ToString();
+		startColorAInputField.text = (laserPartData.startColor.a).ToString();
 
-		finalColorRInputField.text = (laserPart.finalColor.r * 255).ToString();
-		finalColorGInputField.text = (laserPart.finalColor.g * 255).ToString();
-		finalColorBInputField.text = (laserPart.finalColor.b * 255).ToString();
-		finalColorAInputField.text = (laserPart.finalColor.a).ToString();
+		finalColorRInputField.text = (laserPartData.finalColor.r * 255).ToString();
+		finalColorGInputField.text = (laserPartData.finalColor.g * 255).ToString();
+		finalColorBInputField.text = (laserPartData.finalColor.b * 255).ToString();
+		finalColorAInputField.text = (laserPartData.finalColor.a).ToString();
 
-		switch (laserPart.forceDirection)
+		switch (laserPartData.forceDirection)
 		{
-			case LaserPart.ForceDirections.forward:
+			case LaserPartData.ForceDirections.forward:
 				forceDirectionDropdown.value = 0;
 				break;
-			case LaserPart.ForceDirections.backward:
+			case LaserPartData.ForceDirections.backward:
 				forceDirectionDropdown.value = 1;
 				break;
-			case LaserPart.ForceDirections.left:
+			case LaserPartData.ForceDirections.left:
 				forceDirectionDropdown.value = 2;
 				break;
-			case LaserPart.ForceDirections.right:
+			case LaserPartData.ForceDirections.right:
 				forceDirectionDropdown.value = 3;
 				break;
 		}
-		forceFactorInputField.text = laserPart.forceFactor.ToString();
-		gravityInputField.text = laserPart.gravity.ToString();
+		forceFactorInputField.text = laserPartData.forceFactor.ToString();
+		gravityInputField.text = laserPartData.gravity.ToString();
 	}
 
-	private LaserPart GetLaserPartFromUI()
+	private LaserPartData GetLaserPartFromUI()
 	{
-		LaserPart laserPart = new LaserPart
+		LaserPartData laserPart = new LaserPartData
 		{
 			angle = int.Parse(angleInputField.text),
 			radius = int.Parse(radiusInputField.text),
@@ -118,16 +118,16 @@ public class LaserUI : MonoBehaviour
 		switch (forceDirectionDropdown.value)
 		{
 			case 0:
-				laserPart.forceDirection = LaserPart.ForceDirections.forward;
+				laserPart.forceDirection = LaserPartData.ForceDirections.forward;
 				break;
 			case 1:
-				laserPart.forceDirection = LaserPart.ForceDirections.backward;
+				laserPart.forceDirection = LaserPartData.ForceDirections.backward;
 				break;
 			case 2:
-				laserPart.forceDirection = LaserPart.ForceDirections.left;
+				laserPart.forceDirection = LaserPartData.ForceDirections.left;
 				break;
 			case 3:
-				laserPart.forceDirection = LaserPart.ForceDirections.right;
+				laserPart.forceDirection = LaserPartData.ForceDirections.right;
 				break;
 		}
 

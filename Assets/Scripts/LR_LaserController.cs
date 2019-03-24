@@ -20,21 +20,21 @@ public class LR_LaserController : RhythmControllerBeatHandler
 		int beatIndex = currentBeat - rhythmController.Level.BeatsBeforeLevelStarts;
 		if (beatIndex >= 0 && _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.changeItem)
 		{
-			CreateLaser(preLaser, _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(LaserTypes.PreLaser), beatIndex, true);
+			CreateLaser(preLaser, _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.item.GetLaserPart(LaserTypes.PreLaser), beatIndex, true);
 		}
 	}
 
-	public void CreateLaser(GameObject laser, LaserPart laserPart, int beatIndex, bool activateLaser)
+	public void CreateLaser(GameObject laser, LaserPartData LaserPartData, int beatIndex, bool activateLaser)
 	{
-		Transform currentPreLaser = SpawnAroundObject.Spawn(laser, laserPart.angle, laserPart.radius);
+		Transform currentPreLaser = SpawnAroundObject.Spawn(laser, LaserPartData.angle, LaserPartData.radius);
 		LaserInitializer laserInitializer = currentPreLaser.GetComponent<LaserInitializer>();
 		laserInitializer.index = beatIndex;
 
 		if (laser == preLaser)
-			laserInitializer.InitializeLaserPart(_musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(LaserTypes.PreLaser));
+			laserInitializer.InitializeLaserPartData(_musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.item.GetLaserPart(LaserTypes.PreLaser));
 
 		if (laser == hitLaser)
-			laserInitializer.InitializeLaserPart(_musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(LaserTypes.HitLaser));
+			laserInitializer.InitializeLaserPartData(_musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.item.GetLaserPart(LaserTypes.HitLaser));
 
 		if (activateLaser)
 			laserInitializer.ActivateLaser();

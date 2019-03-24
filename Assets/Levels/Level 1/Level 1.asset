@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2542f6b6910f62c49b4abf095ef78bea, type: 3}
+  m_Script: {fileID: 11500000, guid: b03f53c0c42fedd4fa3339cd6ddf3c47, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
   _bpm: 160
@@ -20,4 +20,3 @@ MonoBehaviour:
     pitch: 1
     playOnAwake: 0
   cameraSize: 5
-  _beats: []
