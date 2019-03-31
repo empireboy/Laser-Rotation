@@ -523,6 +523,7 @@ GameObject:
   - component: {fileID: 315889151}
   - component: {fileID: 315889148}
   - component: {fileID: 315889149}
+  - component: {fileID: 315889150}
   - component: {fileID: 315889152}
   - component: {fileID: 315889153}
   m_Layer: 0
@@ -587,6 +588,23 @@ MonoBehaviour:
     type: 3}
   hitLaser: {fileID: 1899808292160954253, guid: aa4b62a0491e66b47a592f0ae128def4,
     type: 3}
+--- !u!114 &315889150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315889145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d45365ffcc100498ccb88bdd13abad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walls:
+  - {fileID: 238316415}
+  - {fileID: 1849598679}
+  - {fileID: 601144456}
+  - {fileID: 2076782504}
 --- !u!114 &315889151
 MonoBehaviour:
   m_ObjectHideFlags: 0

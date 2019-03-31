@@ -1,7 +1,9 @@
-﻿using CM.Music;
-
+﻿[System.Serializable]
 public class LR_Beat
 {
-	public BeatItem<LaserData> laser = new BeatItem<LaserData>();
-	public BeatItem<Walls> walls = new BeatItem<Walls>();
+	public bool spawnLaser;
+	public LaserData laser;
+
+	public bool changeWalls;
+	public WallsData walls;
 }

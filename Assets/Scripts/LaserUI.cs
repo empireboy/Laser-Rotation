@@ -53,14 +53,14 @@ public class LaserUI : MonoBehaviour
 	{
 		LaserPartData laserPartData = GetLaserPartFromUI();
 
-		_musicLevelSetup.musicLevel.GetBeat(_beatIndex).laser.item.SetLaserPart(laserPartData, _laserType);
+		_musicLevelSetup.musicLevel.GetBeat(_beatIndex).laser.SetLaserPart(laserPartData, _laserType);
 
 		_musicLevelEditor.UpdateIndex();
 	}
 
 	public void Preset(int beatIndex)
 	{
-		LaserPartData laserPartData = _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.item.GetLaserPart(_laserType);
+		LaserPartData laserPartData = _musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(_laserType);
 
 		angleInputField.text = laserPartData.angle.ToString();
 		radiusInputField.text = laserPartData.radius.ToString();

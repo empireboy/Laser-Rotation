@@ -32,14 +32,16 @@ public class LR_MusicLevelEditorSpawning : MusicLevelEditorBeatHandler
 	{
 		if (Input.GetKeyDown(KeyCode.C))
 		{
-			LR_Beat beat = new LR_Beat();
-			beat.laser.changeItem = true;
-			beat.laser.item.preLaser.radius = 5;
-			beat.laser.item.preLaser.startColor = Color.green;
-			beat.laser.item.hitLaser.radius = 5;
-			beat.laser.item.hitLaser.startColor = Color.red;
-			beat.laser.item.hitLaser.forceFactor = 2;
-			beat.laser.item.hitLaser.forceDirection = LaserPartData.ForceDirections.backward;
+			LR_Beat beat = new LR_Beat
+			{
+				spawnLaser = true
+			};
+			beat.laser.preLaser.radius = 5;
+			beat.laser.preLaser.startColor = Color.green;
+			beat.laser.hitLaser.radius = 5;
+			beat.laser.hitLaser.startColor = Color.red;
+			beat.laser.hitLaser.forceFactor = 2;
+			beat.laser.hitLaser.forceDirection = LaserPartData.ForceDirections.backward;
 			CreateNewLaser(beat, _currentIndex);
 		}
 
@@ -83,15 +85,15 @@ public class LR_MusicLevelEditorSpawning : MusicLevelEditorBeatHandler
 
 		if (index-18 >= 0)
 		{
-			if (_musicLevelSetup.musicLevel.GetBeat(index-18).laser.changeItem)
+			if (_musicLevelSetup.musicLevel.GetBeat(index-18).spawnLaser)
 			{
-				_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.GetBeat(index-18).laser.item.GetLaserPart(LaserTypes.HitLaser), index-18, false);
+				_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.GetBeat(index-18).laser.GetLaserPart(LaserTypes.HitLaser), index-18, false);
 			}
 		}
 
-		if (_musicLevelSetup.musicLevel.GetBeat(index).laser.changeItem)
+		if (_musicLevelSetup.musicLevel.GetBeat(index).spawnLaser)
 		{
-			_laserController.CreateLaser(_laserController.preLaser, _musicLevelSetup.musicLevel.GetBeat(index).laser.item.GetLaserPart(LaserTypes.PreLaser), index, false);
+			_laserController.CreateLaser(_laserController.preLaser, _musicLevelSetup.musicLevel.GetBeat(index).laser.GetLaserPart(LaserTypes.PreLaser), index, false);
 		}
 	}
 
@@ -100,7 +102,7 @@ public class LR_MusicLevelEditorSpawning : MusicLevelEditorBeatHandler
 		if (index - 18 >= 0)
 		{
 			_musicLevelSetup.musicLevel.SetBeat(beat, index - 18);
-			_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.GetBeat(index-18).laser.item.GetLaserPart(LaserTypes.HitLaser), index, false);
+			_laserController.CreateLaser(_laserController.hitLaser, _musicLevelSetup.musicLevel.GetBeat(index-18).laser.GetLaserPart(LaserTypes.HitLaser), index, false);
 			_musicLevelEditor.UpdateIndex();
 		}
 	}

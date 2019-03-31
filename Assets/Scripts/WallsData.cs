@@ -1,5 +1,5 @@
 ﻿[System.Serializable]
-public struct Walls
+public struct WallsData
 {
 	public bool front;
 	public bool back;

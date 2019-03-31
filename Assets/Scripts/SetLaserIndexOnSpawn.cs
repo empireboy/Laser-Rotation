@@ -10,7 +10,7 @@ public class SetLaserIndexOnSpawn : MonoBehaviour
 
 	private void OnSpawn(Transform spawningObject)
 	{
-		spawningObject.GetComponent<LaserInitializer>().InitializeLaserPartData(FindObjectOfType<LR_MusicLevelSetup>().musicLevel.GetBeat(GetComponent<LaserInitializer>().index).laser.item.GetLaserPart(LaserTypes.HitLaser));
+		spawningObject.GetComponent<LaserInitializer>().InitializeLaserPartData(FindObjectOfType<LR_MusicLevelSetup>().musicLevel.GetBeat(GetComponent<LaserInitializer>().index).laser.GetLaserPart(LaserTypes.HitLaser));
 		spawningObject.GetComponent<LaserInitializer>().ActivateLaser();
 	}
 }

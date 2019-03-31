@@ -19,4 +19,4 @@ MonoBehaviour:
     volume: 0.3
     pitch: 1
     playOnAwake: 0
-  cameraSize: 5
+  _beats: []
