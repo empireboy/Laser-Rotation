@@ -19,9 +19,25 @@ public class LR_WallsController : RhythmControllerBeatHandler
 	protected override void OnBeat(int currentBeat)
 	{
 		int beatIndex = currentBeat - rhythmController.Level.BeatsBeforeLevelStarts;
-		if (beatIndex >= 0 && _musicLevelSetup.musicLevel.GetBeat(beatIndex).changeWalls)
+
+		// Get latest wallsData that it can find
+		bool foundWallsData = false;
+		int wallsBeatIndex = currentBeat;
+		while (!foundWallsData && wallsBeatIndex >= 0)
 		{
-			ChangeWalls(_musicLevelSetup.musicLevel.GetBeat(beatIndex).walls, beatIndex);
+			if (_musicLevelSetup.musicLevel.GetBeat(wallsBeatIndex).changeWalls)
+			{
+				foundWallsData = true;
+			}
+			else
+			{
+				wallsBeatIndex--;
+			}
+		}
+
+		if (wallsBeatIndex >= 0)
+		{
+			ChangeWalls(_musicLevelSetup.musicLevel.GetBeat(wallsBeatIndex).walls, wallsBeatIndex);
 		}
 	}
 

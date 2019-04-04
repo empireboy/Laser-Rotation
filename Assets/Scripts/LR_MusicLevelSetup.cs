@@ -33,5 +33,16 @@ public class LR_MusicLevelSetup : MonoBehaviour
 		{
 			musicLevel.AddBeat(new LR_Beat());
 		}
+
+		WallsData walls = new WallsData()
+		{
+			back = true,
+			front = false,
+			left = true,
+			right = true
+		};
+
+		musicLevel.GetBeat(0).changeWalls = true;
+		musicLevel.GetBeat(0).walls = walls;
 	}
 }
