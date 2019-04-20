@@ -28,13 +28,11 @@ public class LaserUI : MonoBehaviour
 
 	private LR_MusicLevelSetup _musicLevelSetup;
 	private MusicLevelEditor _musicLevelEditor;
-	private LR_MusicLevelEditorSpawning _musicLevelEditorSpawning;
 
 	private void Awake()
 	{
 		_musicLevelSetup = FindObjectOfType<LR_MusicLevelSetup>();
 		_musicLevelEditor = FindObjectOfType<MusicLevelEditor>();
-		_musicLevelEditorSpawning = FindObjectOfType<LR_MusicLevelEditorSpawning>();
 	}
 
 	private void Start()

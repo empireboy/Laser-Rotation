@@ -770,7 +770,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8643631172302306397}
+      - m_Target: {fileID: 495068698289173431}
         m_MethodName: Apply
         m_Mode: 1
         m_Arguments:
@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 950857657387556493}
   - component: {fileID: 950857657387556723}
   - component: {fileID: 950857657387556722}
-  - component: {fileID: 8643631172302306397}
+  - component: {fileID: 495068698289173431}
   m_Layer: 5
   m_Name: LaserUI
   m_TagString: LaserUI
@@ -1758,7 +1758,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &8643631172302306397
+--- !u!114 &495068698289173431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1767,7 +1767,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 950857657387556492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab99fce1376495a44aef7d82f1cefb72, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a3d0cc222497d94b8f6ee43ece78c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeText: {fileID: 1542083179620180550}
@@ -1978,7 +1978,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8643631172302306397}
+      - m_Target: {fileID: 495068698289173431}
         m_MethodName: Remove
         m_Mode: 1
         m_Arguments:
