@@ -34,14 +34,14 @@ public class LR_WallsUI : LR_BeatItemUI<WallsData>
 	{
 		WallsData wallsData = GetDataFromUI();
 
-		musicLevelSetup.musicLevel.GetBeat(beatIndex).walls = wallsData;
+		musicLevelSetup.musicLevel.GetBeat(musicLevelEditor.CurrentIndex).walls = wallsData;
 
 		base.Apply();
 	}
 
 	public override void Remove()
 	{
-		musicLevelSetup.musicLevel.SetBeat(new LR_Beat(), beatIndex);
+		musicLevelSetup.musicLevel.SetBeat(new LR_Beat(), musicLevelEditor.CurrentIndex);
 
 		base.Remove();
 	}

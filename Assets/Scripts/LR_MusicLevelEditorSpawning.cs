@@ -114,11 +114,12 @@ public class LR_MusicLevelEditorSpawning : MusicLevelEditorBeatHandler
 		{
 			Destroy(laser);
 		}
-
+		/*
 		GameObject[] lasersUI = GameObject.FindGameObjectsWithTag("LaserUI");
 		foreach (GameObject laserUI in lasersUI)
 		{
 			Destroy(laserUI);
 		}
+		*/
 	}
 }

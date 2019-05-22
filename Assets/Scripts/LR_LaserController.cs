@@ -10,6 +10,9 @@ public class LR_LaserController : RhythmControllerBeatHandler
 
 	private LR_MusicLevelSetup _musicLevelSetup;
 
+	public delegate void LaserSpawnHandler(LaserTypes laserType);
+	public event LaserSpawnHandler LaserSpawnEvent;
+
 	protected override void OnAwake()
 	{
 		_musicLevelSetup = GetComponent<LR_MusicLevelSetup>();
@@ -42,9 +45,11 @@ public class LR_LaserController : RhythmControllerBeatHandler
 		if (!activateLaser)
 		{
 			if (laser == preLaser)
-				laserInitializer.CreateUI(beatIndex, LaserTypes.PreLaser);
+				LaserSpawnEvent?.Invoke(LaserTypes.PreLaser);
+				//laserInitializer.CreateUI(beatIndex, LaserTypes.PreLaser);
 			if (laser == hitLaser)
-				laserInitializer.CreateUI(beatIndex, LaserTypes.HitLaser);
+				LaserSpawnEvent?.Invoke(LaserTypes.HitLaser);
+				//laserInitializer.CreateUI(beatIndex, LaserTypes.HitLaser);
 		}
 	}
 }

@@ -25,12 +25,30 @@ public class LR_LaserUI : LR_BeatItemUI<LaserPartData>
 	public InputField angleInputField;
 	public InputField radiusInputField;
 
-	public void Initialize(int beatIndex, MusicLevelEditor editor, LR_MusicLevelSetup setup, LaserTypes laserType)
-	{
-		_laserType = laserType;
-		typeText.text = _laserType.ToString();
+	private LR_MusicLevelEditorSpawning _spawning;
 
-		base.Initialize(beatIndex, editor, setup);
+	public void Initialize(MusicLevelEditor editor, LR_MusicLevelSetup setup, LR_MusicLevelEditorSpawning spawning)
+	{
+		_spawning = spawning;
+
+		base.Initialize(editor, setup);
+	}
+
+	public override void Activate()
+	{
+		base.Activate();
+
+		LR_Beat beat = new LR_Beat
+		{
+			spawnLaser = true
+		};
+		beat.laser.preLaser.radius = 5;
+		beat.laser.preLaser.startColor = Color.green;
+		beat.laser.hitLaser.radius = 5;
+		beat.laser.hitLaser.startColor = Color.red;
+		beat.laser.hitLaser.forceFactor = 2;
+		beat.laser.hitLaser.forceDirection = LaserPartData.ForceDirections.backward;
+		_spawning.CreateNewLaser(beat, musicLevelEditor.CurrentIndex);
 	}
 
 	public override LaserPartData GetDataFromUI()
@@ -75,6 +93,8 @@ public class LR_LaserUI : LR_BeatItemUI<LaserPartData>
 
 	public override void Preset(int beatIndex)
 	{
+		base.Preset(beatIndex);
+
 		LaserPartData laserPartData = musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.GetLaserPart(_laserType);
 
 		angleInputField.text = laserPartData.angle.ToString();
@@ -113,6 +133,8 @@ public class LR_LaserUI : LR_BeatItemUI<LaserPartData>
 	{
 		LaserPartData laserPartData = GetDataFromUI();
 
+		int beatIndex = GetCurrentIndex();
+
 		musicLevelSetup.musicLevel.GetBeat(beatIndex).laser.SetLaserPart(laserPartData, _laserType);
 
 		base.Apply();
@@ -120,8 +142,28 @@ public class LR_LaserUI : LR_BeatItemUI<LaserPartData>
 
 	public override void Remove()
 	{
+		int beatIndex = GetCurrentIndex();
+
 		musicLevelSetup.musicLevel.SetBeat(new LR_Beat(), beatIndex);
 
 		base.Remove();
+	}
+
+	public void SetLaserType(LaserTypes laserType)
+	{
+		_laserType = laserType;
+		typeText.text = laserType.ToString();
+	}
+
+	private int GetCurrentIndex()
+	{
+		int beatIndex = musicLevelEditor.CurrentIndex;
+
+		if (_laserType == LaserTypes.HitLaser)
+		{
+			beatIndex -= 18;
+		}
+
+		return beatIndex;
 	}
 }

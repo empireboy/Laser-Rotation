@@ -11,7 +11,7 @@ public class LaserInitializer : MonoBehaviour
 {
 	[HideInInspector] public int index;
 
-	public GameObject ui;
+	//public GameObject ui;
 
 	private bool _isActivated = false;
 	public bool IsActivated { get => _isActivated; }
@@ -64,10 +64,11 @@ public class LaserInitializer : MonoBehaviour
 			force = Quaternion.Euler(0, 0, LaserPartData.angle) * Vector2.up;
 		GetComponent<ConstantForce2D>().force = force * LaserPartData.forceFactor;
 	}
-
+	/*
 	public void CreateUI(int index, LaserTypes laserType)
 	{
 		LaserUI laserUI = Instantiate(ui, GameObject.FindGameObjectWithTag("LaserUIContainer").transform).GetComponent<LaserUI>();
 		laserUI.Initialize(index, laserType);
 	}
+	*/
 }

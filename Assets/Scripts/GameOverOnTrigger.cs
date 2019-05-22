@@ -6,7 +6,7 @@ public class GameOverOnTrigger : MonoBehaviour
 {
 	private void Awake()
 	{
-		GetComponent<Trigger>().TriggerEvent += OnTrigger;
+		GetComponent<Trigger2D>().TriggerEvent += OnTrigger;
 	}
 
 	private void OnTrigger()

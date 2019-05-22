@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using CM.Music;
+using System.IO;
 
 [RequireComponent(typeof(RhythmController))]
 public class LR_MusicLevelSetup : MonoBehaviour
@@ -22,6 +23,10 @@ public class LR_MusicLevelSetup : MonoBehaviour
 		{
 			ResetBeats();
 		}
+
+		string path = Application.dataPath + "/Levels.json";
+		string json = JsonUtility.ToJson(musicLevel);
+		File.WriteAllText(path, json);
 	}
 
 	public void ResetBeats()
